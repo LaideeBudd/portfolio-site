@@ -6,14 +6,6 @@
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "Conseration";
-  src: local("Conseration") url(../fonts/Conseration-Bold.woff);
-}
-@font-face {
-  font-family: "Josefin Sans";
-  src: local("Josefin Sans") url(../fonts/JosefinSans-VariableFont_wght.ttf);
-}
 nav #nav-container {
   display: flex;
   flex-direction: row;
@@ -86,7 +78,7 @@ nav #nav-container #nav-items {
 }
 nav #nav-container #nav-items a {
   text-decoration: none;
-  font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif, sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #520000;
@@ -122,12 +114,8 @@ nav #nav-container #nav-items a {
   height: 50vh;
 }
 
-@font-face {
-  font-family: "Conseration";
-  src: local("Conseration") url(../fonts/Conseration-Bold.woff);
-}
 .button {
-  font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
@@ -141,19 +129,15 @@ nav #nav-container #nav-items a {
 }
 @media (max-width: 500px) {
   .button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-@font-face {
-  font-family: "Conseration";
-  src: local("Conseration") url(../fonts/conseration-bold-webfont.woff2);
-}
 .hero-background {
   background-image: url(../images/Brand-Pattern-pink.png);
   background-repeat: repeat;
@@ -204,16 +188,16 @@ nav #nav-container #nav-items a {
   }
 }
 .grid-container .text-box h1 {
-  font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif;
-  font-size: 7.5rem;
-  line-height: 85%;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 6rem;
+  line-height: 95%;
   padding-top: 1rem;
   margin-top: -6rem;
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
   .grid-container .text-box h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
@@ -253,7 +237,7 @@ nav #nav-container #nav-items a {
   .grid-container .text-box .button {
     width: 55%;
     height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {

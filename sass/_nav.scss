@@ -2,16 +2,6 @@
 @use "media-query" as media;
 
 
-@font-face {
-    font-family: "Conseration";
-    src: local("Conseration")url(../fonts/Conseration-Bold.woff);
-}
-
-@font-face {
-    font-family: "Josefin Sans";
-    src: local("Josefin Sans")url(../fonts/JosefinSans-VariableFont_wght.ttf);
-}
-
 
 nav{
 
@@ -102,7 +92,7 @@ nav{
 
             a{
                 text-decoration: none;
-                font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif, sans-serif;
+                font-family: "Fjalla One", sans-serif;
                 font-size: 1.5rem;
                 font-weight: bold;
                 color: #520000;

@@ -1,15 +1,11 @@
 @use "reset";
 @use "media-query" as media;
 
-@font-face {
-    font-family: "Conseration";
-    src: local("Conseration")url(../fonts/Conseration-Bold.woff);
-}
 
 .button{
 
     // Font Styling
-    font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif;
+    font-family: "Fjalla One", sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
@@ -25,12 +21,12 @@
 
     @include media.xs{
         // Font Styling
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     @include media.sm{
         // Font Styling
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 }
