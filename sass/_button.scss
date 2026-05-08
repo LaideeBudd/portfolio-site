@@ -1,0 +1,36 @@
+@use "reset";
+@use "media-query" as media;
+
+@font-face {
+    font-family: "Conseration";
+    src: local("Conseration")url(../fonts/Conseration-Bold.woff);
+}
+
+.button{
+
+    // Font Styling
+    font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center;
+
+    // Button Styling
+    background-color: #520000;
+    height: 5rem;
+    border-radius: 100px;
+    width: 80%;
+
+    @include media.xs{
+        // Font Styling
+        font-size: 2rem;
+    }
+
+    @include media.sm{
+        // Font Styling
+        font-size: 2rem;
+    }
+
+}

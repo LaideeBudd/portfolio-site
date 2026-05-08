@@ -102,14 +102,14 @@ nav{
 
             a{
                 text-decoration: none;
-                font-family: "Conseration";
+                font-family: "Conseration", "Oswald", "Arial Narrow", sans-serif, sans-serif;
                 font-size: 1.5rem;
                 font-weight: bold;
                 color: #520000;
             }
 
             @include media.xs{
-                // display: none;
+                display: none;
                 width: 100%;
                 height: 55%;
                 background-color: #fff;
