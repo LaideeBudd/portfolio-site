@@ -143,11 +143,6 @@ nav #nav-container #nav-items a {
   background-repeat: repeat;
 }
 
-.red-brand-background {
-  background-image: url(../images/Brand-Pattern-deep-red.png);
-  background-repeat: repeat;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1 fr 1fr;
@@ -240,15 +235,15 @@ nav #nav-container #nav-items a {
 }
 @media (max-width: 500px) {
   .grid-container .text-box .button {
-    width: 60%;
-    height: 4rem;
-    font-size: 1.5rem;
+    width: 55%;
+    height: 3rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .grid-container .text-box .button {
     width: 55%;
-    height: 4rem;
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -279,62 +274,15 @@ nav #nav-container #nav-items a {
   }
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-}
 section h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Fjalla One", sans-serif;
-  color: #FFB0B0;
-  margin: 5rem;
-}
-@media (max-width: 500px) {
-  section h2 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  section h2 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  section h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-  width: 85%;
-  align-self: center;
-  margin-bottom: 5rem;
-}
-@media (max-width: 500px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .card-grid {
-    gap: 1rem;
-    width: 95%;
-  }
+  gap: 1rem;
 }
 .card-grid .card {
   display: flex;
@@ -342,47 +290,13 @@ section h2 {
   width: 100%;
 }
 .card-grid .card img {
-  aspect-ratio: 1;
+  width: 5rem;
+  height: 5rem;
   object-fit: cover;
-  border-radius: 15%;
-  margin: 1rem;
-}
-.card-grid .card h4 {
-  color: #FFB0B0;
-  align-self: center;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 3rem;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .card-grid .card h4 {
-    font-size: 2rem;
-  }
-}
-.card-grid .card h5 {
-  color: #FFB0B0;
-  align-self: center;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 2rem;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .card-grid .card h5 {
-    font-size: 1.5rem;
-  }
-}
-.card-grid .card .button {
-  align-self: center;
-  font-size: 2rem;
-  background-color: #B8183C;
-  margin: 1rem 0 1rem 0;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .card-grid .card {
-    font-size: 1.5rem;
-  }
 }
 
 body {
   background-color: #000;
 }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=output.scss.map */
