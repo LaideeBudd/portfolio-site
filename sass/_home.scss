@@ -27,7 +27,7 @@
         "txt"
         "hs";
 
-        height: 65vh;
+        height: 85vh;
     }
 
     @include media.sm{
@@ -38,7 +38,7 @@
         "txt"
         "hs";
 
-        height: 65vh;
+        height: 85vh;
     }
 
 
@@ -80,14 +80,14 @@
             margin-bottom: 1rem;
 
             @include media.xs{
-                font-size: 3.5rem;
+                font-size: 5rem;
                 margin-top: 0rem;
                 margin-bottom: 0.5rem;
                 
             }
 
             @include media.sm{
-                font-size: 4rem;
+                font-size: 5rem;
                 margin-top: 0rem;
                 margin-bottom: 0.5rem;
                 
@@ -106,14 +106,14 @@
             margin-bottom: 2rem;
 
             @include media.xs{
-                font-size: 1rem;
-                width: 65%;
+                font-size: 1.5rem;
+                width: 85%;
                 margin-bottom: 1rem;
             }
 
             @include media.sm{
-                font-size: 1rem;
-                width: 65%;
+                font-size: 1.5rem;
+                width: 85%;
                 margin-bottom: 1rem;
             }
         }
@@ -149,14 +149,14 @@
             justify-self: flex-end;
             margin-top: -10rem;
             margin-right: -5rem;
-            height: 175%;
+            height: 145%;
         }
 
         @include media.sm{
             justify-self: flex-end;
             margin-top: -10rem;
             margin-right: -5rem;
-            height: 250%;
+            height: 145%;
         }
     }
 }
