@@ -4,6 +4,21 @@
 @use "footer";
 @use "home";
 
+
 body{
     background-color: #000;
+}
+
+.placeholder{
+    height: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-family: "Fjalla One", sans-serif;
+        color: #fff;
+        text-align: center;
+        font-size: 5rem;
+    }
 }

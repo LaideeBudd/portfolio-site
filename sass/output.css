@@ -239,6 +239,10 @@ footer .copyright {
   color: #520000;
 }
 
+body {
+  height: 100%;
+}
+
 .hero-grid-container {
   display: grid;
   grid-template-columns: 1fr 1 fr 1fr;
@@ -707,6 +711,19 @@ section .grid-container .section-img {
 
 body {
   background-color: #000;
+}
+
+.placeholder {
+  height: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=output.css.map */

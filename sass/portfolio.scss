@@ -1,0 +1,196 @@
+@use "reset";
+@use "media-query" as media;
+@use "text-styling";
+@use "button";
+@use "nav";
+@use "footer";
+
+
+body{
+    background-image: url(../images/Brand-Pattern-deep-red.png);
+    border-color: #520000;
+    background-repeat: repeat;
+    height: 100%;
+}
+
+p{
+    width: 100%;
+}
+
+.section-header{
+
+    padding-bottom: 5rem;
+
+    display: flex;
+    align-items: flex-start;
+
+    @include media.xs{
+        align-items: center;
+    }
+
+    @include media.xs{
+        align-items: center;
+    }
+
+    h1{
+        color: #FFB0B0;
+        margin-left: 5rem;
+        width: 100%;
+
+        @include media.xs{
+            margin: 0;
+            text-align: center;
+        }
+
+        @include media.sm{
+            margin: 0;
+            text-align: center;
+        }
+
+    }
+}
+
+.top{
+    padding-top: 10rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    @include media.xs{
+        grid-template-columns: 1fr;
+
+        padding: 3rem;
+
+        margin-top: -3rem;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        margin-top: -3rem;
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        margin-top: -3rem;
+    }
+
+    img{
+        grid-area: pic;
+
+        background-color: #000;
+
+        aspect-ratio: 15/10;
+        width: 100%;
+
+        object-fit: cover;
+        border-radius: 25px;
+
+
+    }
+
+    .textbox{
+        grid-area: txt;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+
+        h3{
+            font-size: 4rem;
+            color: #FFB0B0;
+
+            @include media.xs{
+                margin-top: 2rem;
+            }
+            @include media.sm{
+                margin-top: 2rem;
+            }
+
+            @include media.md{
+                margin-top: 2rem;
+            }
+        }
+
+        h4{
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            width: 85%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .button{
+            background-color: #FFB0B0;
+            color: #520000;
+            font-size: 2rem;
+            width: 65%;
+            height: 3.5rem;
+
+            @include media.xs{
+                width: 85%;
+            }
+        }
+
+    }
+}
+
+.left{
+    grid-template-areas: 
+    "pic txt";
+
+    @include media.xs{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+
+    @include media.sm{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+
+    @include media.md{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+}
+
+.right{
+    grid-template-areas: 
+    "txt pic";
+
+    @include media.xs{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+
+    @include media.sm{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+
+    @include media.md{
+        grid-template-areas:
+        "pic"
+        "txt";
+    }
+}
+
