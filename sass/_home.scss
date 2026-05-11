@@ -11,9 +11,18 @@
 .red-brand-background{
     background-image: url(../images/Brand-Pattern-deep-red.png);
     background-repeat: repeat;
+
+    .button{
+        background-color: #FFB0B0;
+        color: #520000;
+    }
 }
 
-.grid-container{
+
+
+
+
+.hero-grid-container{
     display: grid;
     grid-template-columns: 1fr 1 fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -111,13 +120,13 @@
             margin-bottom: 2rem;
 
             @include media.xs{
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 width: 85%;
                 margin-bottom: 1rem;
             }
 
             @include media.sm{
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 width: 75%;
                 margin-bottom: 1rem;
             }
@@ -126,13 +135,13 @@
         .button{
 
             @include media.xs{
-                width: 60%;
+                width: 85%;
                 height: 4rem;
                 font-size: 1.5rem;
             }
 
             @include media.sm{
-                width: 55%;
+                width: 85%;
                 height: 4rem;
                 font-size: 1.5rem;
             }
@@ -166,28 +175,43 @@
     }
 }
 
+
+
+
 section{
+    display: flex;
+    flex-direction: column;
+
     h2{
         font-size: 5rem;
         font-family: "Fjalla One", sans-serif;
         color: #FFB0B0;
+        text-align: left;
+        align-self: flex-start;
         margin: 5rem;
 
+
         @include media.xs{
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-align: center;
             margin-bottom: 3rem;
+            width: 100%;
+            align-self: center;
         }
 
         @include media.sm{
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-align: center;
             margin-bottom: 3rem;
+            width: 100%;
+            align-self: center;
         }
 
         @include media.md{
             text-align: center;
             margin-bottom: 3rem;
+            width: 100%;
+            align-self: center;
         }
 
     }
@@ -200,6 +224,7 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
+    margin-top: 5rem;
 
     width: 85%;
     align-self: center;
@@ -268,5 +293,132 @@ section{
         @include media.md{
             font-size: 1.5rem;
         }
+    }
+}
+
+section{
+
+    h2{
+        margin-bottom: 0;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas: 
+        "tb pic";
+
+        
+
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 5rem;
+
+        @include media.xs{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "pic"
+            "tb";
+        }
+
+        @include media.sm{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "pic"
+            "tb";
+        }
+
+        .text-box{
+            display: flex;
+            flex-direction: column;
+
+            grid-area: tb;
+
+            align-self: flex-start;
+            
+
+            margin: 0 2rem 0 5rem;
+
+            @include media.xs{
+                margin: 2rem;
+                text-align: center;
+            }
+
+            @include media.sm{
+                margin: 2rem;
+                text-align: center;
+            }
+
+            h3{
+                font-family: "Fjalla One", sans-serif;
+                color: #fff;
+                font-size: 3.5rem;
+                margin: 3rem 0 3rem 0;
+
+                @include media.xs{
+                    margin: 0 0 2rem 0;
+                    font-size: 2.5rem;
+                }
+
+                @include media.sm{
+                    margin: 0 0 2rem 0;
+                    font-size: 2.5rem;
+                }
+            }
+
+            p{
+                font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+                color: #fff;
+    
+                @include media.xs{
+                    font-size: 1.25rem;
+                    
+                    
+                }
+    
+                @include media.sm{
+                    font-size: 1.25rem;
+                    
+                    
+                }
+            }
+
+            .button{
+                width: 85%;
+                font-size: 2rem;
+
+                @include media.xs{
+                    width: 85%;
+                    align-self: center;
+                }
+
+                @include media.sm{
+                    width: 85%;
+                    align-self: center;
+                }
+            }
+
+            
+        }
+
+        img{
+            width: 90%;
+            align-self: center;
+            justify-self: center;
+            grid-area: pic;
+            margin-top: -4.5rem;
+
+            @include media.xs{
+                margin: 0;
+            }
+
+            @include media.sm{
+                margin: 0;
+            }
+        }
+
     }
 }
