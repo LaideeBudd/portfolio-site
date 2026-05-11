@@ -484,4 +484,63 @@ p {
   }
 }
 
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 500px) {
+  .mini-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .mini-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  aspect-ratio: 1;
+  background-size: cover;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+  border-radius: 25px;
+}
+.portfolio-card .button {
+  background-color: #FFB0B0;
+  color: #520000;
+  font-size: 2rem;
+}
+
+#monster-ballad {
+  background-image: url(../images/infographic.png);
+}
+
+#mag-ad {
+  background-image: url(../images/magad.png);
+  background-position: center;
+}
+
+#books {
+  background-image: url(../images/book-jackets.png);
+}
+
+#travel {
+  background-image: url(../images/brochure.png);
+}
+
+#billboard {
+  background-image: url(../images/billboard.PNG);
+}
+
+#mag {
+  background-image: url(../images/magazine.png);
+}
+
 /*# sourceMappingURL=portfolio.css.map */
