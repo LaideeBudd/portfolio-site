@@ -406,6 +406,7 @@ p {
 .grid-container .textbox h3 {
   font-size: 4rem;
   color: #FFB0B0;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .grid-container .textbox h3 {
@@ -424,6 +425,7 @@ p {
 }
 .grid-container .textbox h4 {
   margin-bottom: 2rem;
+  text-align: center;
 }
 .grid-container .textbox p {
   font-size: 1.5rem;
