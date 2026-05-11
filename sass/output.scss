@@ -143,7 +143,16 @@ nav #nav-container #nav-items a {
   background-repeat: repeat;
 }
 
-.grid-container {
+.red-brand-background {
+  background-image: url(../images/Brand-Pattern-deep-red.png);
+  background-repeat: repeat;
+}
+.red-brand-background .button {
+  background-color: #FFB0B0;
+  color: #520000;
+}
+
+.hero-grid-container {
   display: grid;
   grid-template-columns: 1fr 1 fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -151,7 +160,7 @@ nav #nav-container #nav-items a {
   height: 85vh;
 }
 @media (max-width: 500px) {
-  .grid-container {
+  .hero-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "txt" "hs";
@@ -159,14 +168,14 @@ nav #nav-container #nav-items a {
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container {
+  .hero-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "txt" "hs";
     height: 85vh;
   }
 }
-.grid-container .text-box {
+.hero-grid-container .text-box {
   grid-area: txt;
   display: flex;
   flex-direction: column;
@@ -174,20 +183,20 @@ nav #nav-container #nav-items a {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .grid-container .text-box {
+  .hero-grid-container .text-box {
     height: 100%;
     margin-top: 5rem;
     margin-left: 2rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container .text-box {
+  .hero-grid-container .text-box {
     height: 100%;
     margin-top: 5rem;
     margin-left: 2rem;
   }
 }
-.grid-container .text-box h1 {
+.hero-grid-container .text-box h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 6rem;
   line-height: 95%;
@@ -196,69 +205,69 @@ nav #nav-container #nav-items a {
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
-  .grid-container .text-box h1 {
-    font-size: 5rem;
+  .hero-grid-container .text-box h1 {
+    font-size: 4rem;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container .text-box h1 {
-    font-size: 5rem;
+  .hero-grid-container .text-box h1 {
+    font-size: 4rem;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .grid-container .text-box h1 {
+  .hero-grid-container .text-box h1 {
     font-size: 5rem;
   }
 }
-.grid-container .text-box p {
+.hero-grid-container .text-box p {
   font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
-  .grid-container .text-box p {
-    font-size: 1.5rem;
+  .hero-grid-container .text-box p {
+    font-size: 1.25rem;
     width: 85%;
     margin-bottom: 1rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container .text-box p {
-    font-size: 1.5rem;
-    width: 85%;
+  .hero-grid-container .text-box p {
+    font-size: 1.25rem;
+    width: 75%;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 500px) {
-  .grid-container .text-box .button {
+  .hero-grid-container .text-box .button {
     width: 55%;
-    height: 3rem;
-    font-size: 1.25rem;
+    height: 4rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container .text-box .button {
-    width: 55%;
-    height: 3rem;
+  .hero-grid-container .text-box .button {
+    width: 65%;
+    height: 4rem;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .grid-container .text-box .button {
+  .hero-grid-container .text-box .button {
     font-size: 2.5rem;
   }
 }
-.grid-container img {
+.hero-grid-container img {
   grid-area: hs;
   height: 85%;
   align-self: flex-end;
 }
 @media (max-width: 500px) {
-  .grid-container img {
+  .hero-grid-container img {
     justify-self: flex-end;
     margin-top: -10rem;
     margin-right: -5rem;
@@ -266,7 +275,7 @@ nav #nav-container #nav-items a {
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .grid-container img {
+  .hero-grid-container img {
     justify-self: flex-end;
     margin-top: -10rem;
     margin-right: -5rem;
@@ -274,15 +283,73 @@ nav #nav-container #nav-items a {
   }
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
 section h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Fjalla One", sans-serif;
+  color: #FFB0B0;
+  text-align: left;
+  align-self: flex-start;
+  margin: 5rem;
+}
+@media (max-width: 500px) {
+  section h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    align-self: center;
+  }
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 4rem;
+  margin-top: 5rem;
+  width: 85%;
+  align-self: center;
+  margin-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-grid {
+    gap: 1rem;
+    width: 95%;
+  }
 }
 .card-grid .card {
   display: flex;
@@ -290,9 +357,153 @@ section h2 {
   width: 100%;
 }
 .card-grid .card img {
-  width: 5rem;
-  height: 5rem;
+  aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 15%;
+  margin: 1rem;
+}
+.card-grid .card h4 {
+  color: #FFB0B0;
+  align-self: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-grid .card h4 {
+    font-size: 2rem;
+  }
+}
+.card-grid .card h5 {
+  color: #FFB0B0;
+  align-self: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-grid .card h5 {
+    font-size: 1.5rem;
+  }
+}
+.card-grid .card .button {
+  align-self: center;
+  font-size: 2rem;
+  background-color: #B8183C;
+  margin: 1rem 0 1rem 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-grid .card {
+    font-size: 1.5rem;
+  }
+}
+
+section h2 {
+  margin-bottom: 0;
+}
+section .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "tb pic";
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  section .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "tb";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "tb";
+  }
+}
+section .grid-container .text-box {
+  display: flex;
+  flex-direction: column;
+  grid-area: tb;
+  align-self: flex-start;
+  margin: 0 2rem 0 5rem;
+}
+@media (max-width: 500px) {
+  section .grid-container .text-box {
+    margin: 2rem;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container .text-box {
+    margin: 2rem;
+    text-align: center;
+  }
+}
+section .grid-container .text-box h3 {
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  font-size: 3.5rem;
+  margin: 3rem 0 3rem 0;
+}
+@media (max-width: 500px) {
+  section .grid-container .text-box h3 {
+    margin: 0 0 2rem 0;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container .text-box h3 {
+    margin: 0 0 2rem 0;
+    font-size: 2.5rem;
+  }
+}
+section .grid-container .text-box p {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  section .grid-container .text-box p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container .text-box p {
+    font-size: 1.25rem;
+  }
+}
+section .grid-container .text-box .button {
+  width: 85%;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  section .grid-container .text-box .button {
+    width: 85%;
+    align-self: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container .text-box .button {
+    width: 85%;
+    align-self: center;
+  }
+}
+section .grid-container img {
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  grid-area: pic;
+  margin-top: -4.5rem;
+}
+@media (max-width: 500px) {
+  section .grid-container img {
+    margin: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  section .grid-container img {
+    margin: 0;
+  }
 }
 
 body {
