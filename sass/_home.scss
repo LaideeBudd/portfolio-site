@@ -288,6 +288,15 @@ section{
             font-size: 2rem;
             background-color: #B8183C;
             margin: 1rem 0 1rem 0;
+
+            @include media.xs{
+                height: 4rem;
+            }
+    
+            @include media.sm{
+                height: 4rem;
+            }
+        
         }
 
         @include media.md{
@@ -391,11 +400,13 @@ section{
                 @include media.xs{
                     width: 85%;
                     align-self: center;
+                    height: 4rem;
                 }
 
                 @include media.sm{
                     width: 85%;
                     align-self: center;
+                    height: 4rem;
                 }
             }
 
@@ -437,7 +448,18 @@ section{
         margin: 0;
         padding: 3rem;
 
+
         align-self: flex-start;
+
+        @include media.xs{
+            width: 95%;
+            padding: 1rem;
+        }
+
+        @include media.sm{
+            width: 95%;
+            padding: 1rem;
+        }
     }
 
     .foundation-logo{
@@ -448,6 +470,71 @@ section{
 
     .button{
         align-self: center;
+
+        @include media.xs{
+            height: 4rem;
+        }
+
+        @include media.sm{
+            height: 4rem;
+        }
+    }
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    h1{
+        font-family: "Fjalla One", sans-serif;
+        color: #FFB0B0;
+        font-size: 3.5rem;
+        margin: 3rem 0 3rem 0;
+        text-align: center;
+
+        @include media.xs{
+            font-size: 3rem;
+        }
+
+        @include media.sm{
+            font-size: 3rem;
+        }
+
+    }
+
+    p{
+        font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 3rem;                
+        color: #fff;
+        text-align: center;
+
+        @include media.xs{
+            font-size: 1.5rem;
+
+        }
+
+        @include media.xs{
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    .button{
+        width: 45%;
+
+        @include media.xs{
+            width: 85%;
+            height: 4rem;
+        }
+
+        @include media.sm{
+            width: 85%;
+            height: 4rem;
+        }
     }
 }
 

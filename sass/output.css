@@ -129,12 +129,14 @@ nav #nav-container #nav-items a {
 }
 @media (max-width: 500px) {
   .button {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    height: 4rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .button {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    height: 4rem;
   }
 }
 
@@ -390,6 +392,16 @@ section h2 {
   background-color: #B8183C;
   margin: 1rem 0 1rem 0;
 }
+@media (max-width: 500px) {
+  .card-grid .card .button {
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .card-grid .card .button {
+    height: 4rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card {
     font-size: 1.5rem;
@@ -479,12 +491,14 @@ section .grid-container .text-box .button {
   section .grid-container .text-box .button {
     width: 85%;
     align-self: center;
+    height: 4rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   section .grid-container .text-box .button {
     width: 85%;
     align-self: center;
+    height: 4rem;
   }
 }
 section .grid-container .section-img {
@@ -518,6 +532,18 @@ section .grid-container .section-img {
   padding: 3rem;
   align-self: flex-start;
 }
+@media (max-width: 500px) {
+  .foundation .section-img {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .foundation .section-img {
+    width: 95%;
+    padding: 1rem;
+  }
+}
 .foundation .foundation-logo {
   margin-bottom: 3rem;
   width: 85%;
@@ -525,6 +551,73 @@ section .grid-container .section-img {
 }
 .foundation .button {
   align-self: center;
+}
+@media (max-width: 500px) {
+  .foundation .button {
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .foundation .button {
+    height: 4rem;
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.cta h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #FFB0B0;
+  font-size: 3.5rem;
+  margin: 3rem 0 3rem 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .cta h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .cta h1 {
+    font-size: 3rem;
+  }
+}
+.cta p {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .cta p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .cta p {
+    font-size: 1.5rem;
+  }
+}
+.cta .button {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .cta .button {
+    width: 85%;
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .cta .button {
+    width: 85%;
+    height: 4rem;
+  }
 }
 
 body {
