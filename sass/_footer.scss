@@ -1,0 +1,100 @@
+@use "reset";
+@use "media-query" as media;
+
+footer{
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main-section{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 1rem 1rem 1rem 0;
+
+        .name-with-icon{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            justify-self: flex-start;
+
+            img{
+                width: 7rem;
+                margin-right: -1rem;
+            }
+
+            .namestack{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h5{
+                    font-family: "Fjalla One", sans-serif;
+                    font-size: 2rem;
+                    color: #520000;
+
+                
+                }
+
+                p{
+                    font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+                    font-size: 1.5rem;
+                    color: #B8183C;
+                }
+            }
+        }
+
+        @include media.xs{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include media.sm{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a{
+            font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+            font-size: 1.5rem;
+            color: #B8183C;
+            text-decoration: none;
+
+            @include media.xs{
+                margin: 1rem;
+            }
+
+            @include media.sm{
+                margin: 1rem;
+            }
+
+        }
+    }
+
+    .copyright{
+        font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+        font-size: 1rem;
+        color: #520000;
+
+        margin-top: -2rem;
+
+        margin-bottom: 1rem;
+
+        @include media.xs{
+            margin-top: 0;
+        }
+
+        @include media.sm{
+            margin-top: 0;
+        }
+
+    }
+}
