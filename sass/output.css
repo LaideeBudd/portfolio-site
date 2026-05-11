@@ -244,14 +244,14 @@ nav #nav-container #nav-items a {
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box .button {
-    width: 85%;
+    width: 55%;
     height: 4rem;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .hero-grid-container .text-box .button {
-    width: 85%;
+    width: 65%;
     height: 4rem;
     font-size: 1.5rem;
   }
@@ -402,7 +402,6 @@ section h2 {
 section .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "tb pic";
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
@@ -488,7 +487,7 @@ section .grid-container .text-box .button {
     align-self: center;
   }
 }
-section .grid-container img {
+section .grid-container .section-img {
   width: 90%;
   align-self: center;
   justify-self: center;
@@ -496,14 +495,36 @@ section .grid-container img {
   margin-top: -4.5rem;
 }
 @media (max-width: 500px) {
-  section .grid-container img {
+  section .grid-container .section-img {
     margin: 0;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  section .grid-container img {
+  section .grid-container .section-img {
     margin: 0;
   }
+}
+
+.what-i-do {
+  grid-template-areas: "tb pic";
+}
+
+.foundation {
+  grid-template-areas: "pic tb";
+  margin-top: 3rem;
+}
+.foundation .section-img {
+  margin: 0;
+  padding: 3rem;
+  align-self: flex-start;
+}
+.foundation .foundation-logo {
+  margin-bottom: 3rem;
+  width: 85%;
+  align-self: center;
+}
+.foundation .button {
+  align-self: center;
 }
 
 body {
