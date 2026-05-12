@@ -291,10 +291,7 @@ body {
 .hero-grid-container .text-box h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 6rem;
-  line-height: 98%;
-  height: fit-content;
   margin-top: -6rem;
-  margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box h1 {
@@ -314,6 +311,10 @@ body {
   .hero-grid-container .text-box h1 {
     font-size: 5rem;
   }
+}
+.hero-grid-container .text-box .lower-line {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 .hero-grid-container .text-box p {
   font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;

@@ -93,10 +93,9 @@ body{
         h1{
             font-family: "Fjalla One", sans-serif;
             font-size: 6rem;
-            line-height: 98%;
-            height: fit-content;
+
             margin-top: -6rem;
-            margin-bottom: 1rem;
+
 
             @include media.xs{
                 font-size: 4rem;
@@ -117,6 +116,12 @@ body{
 
             }
   
+
+        }
+
+        .lower-line{
+            margin-top: -1rem;
+            margin-bottom: 1rem;
         }
 
         p{
@@ -179,6 +184,8 @@ body{
         }
     }
 }
+
+
 
 
 
