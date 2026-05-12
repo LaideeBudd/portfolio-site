@@ -55,12 +55,32 @@ h3 {
   line-height: 95%;
   padding-top: 1rem;
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.5;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  h3 {
+    font-size: 2.5;
+  }
+}
 
 h4 {
   font-family: "Fjalla One", sans-serif;
   font-size: 2rem;
   line-height: 95%;
   padding-top: 1rem;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  h4 {
+    font-size: 1.75rem;
+  }
 }
 
 h5 {
@@ -411,11 +431,13 @@ p {
 @media (max-width: 500px) {
   .grid-container .textbox h3 {
     margin-top: 2rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .grid-container .textbox h3 {
     margin-top: 2rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -433,6 +455,16 @@ p {
   text-align: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .grid-container .textbox p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .grid-container .textbox p {
+    font-size: 1.25rem;
+  }
+}
 .grid-container .textbox .button {
   background-color: #FFB0B0;
   color: #520000;
@@ -442,6 +474,13 @@ p {
 }
 @media (max-width: 500px) {
   .grid-container .textbox .button {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .grid-container .textbox .button {
+    font-size: 1.5rem;
     width: 85%;
   }
 }
@@ -516,6 +555,16 @@ p {
   background-color: #FFB0B0;
   color: #520000;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .portfolio-card .button {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .portfolio-card .button {
+    font-size: 1.5rem;
+  }
 }
 
 #monster-ballad {
