@@ -126,7 +126,7 @@ footer .main-section {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
 }
 footer .main-section .name-with-icon {
   display: flex;
@@ -185,6 +185,7 @@ footer .copyright {
   font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
   font-size: 1rem;
   color: #520000;
+  text-align: center;
   margin-top: -2rem;
   margin-bottom: 1rem;
 }
@@ -290,8 +291,8 @@ body {
 .hero-grid-container .text-box h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 6rem;
-  line-height: 95%;
-  padding-top: 1rem;
+  line-height: 98%;
+  height: fit-content;
   margin-top: -6rem;
   margin-bottom: 1rem;
 }
