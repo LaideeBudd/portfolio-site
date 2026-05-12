@@ -36,7 +36,9 @@ body{
     "txt . hs"
     "txt . hs" ;
 
-    height: 85vh;
+    min-height: 95vh;
+
+    
 
     @include media.xs{
         grid-template-columns: 1fr;
@@ -112,7 +114,7 @@ body{
             }
 
             @include media.md{
-                font-size: 5rem;
+                font-size: 4rem;
 
             }
   
@@ -166,7 +168,7 @@ body{
 
     img{
         grid-area: hs;
-        height: 85%;
+        max-height: 75vh;
         align-self: flex-end;
 
         @include media.xs{

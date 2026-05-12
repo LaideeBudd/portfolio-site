@@ -249,7 +249,7 @@ body {
   grid-template-columns: 1fr 1 fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: ". . hs" "txt . hs" "txt . hs";
-  height: 85vh;
+  min-height: 95vh;
 }
 @media (max-width: 500px) {
   .hero-grid-container {
@@ -309,7 +309,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-grid-container .text-box h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .hero-grid-container .text-box .lower-line {
@@ -356,7 +356,7 @@ body {
 }
 .hero-grid-container img {
   grid-area: hs;
-  height: 85%;
+  max-height: 75vh;
   align-self: flex-end;
 }
 @media (max-width: 500px) {
