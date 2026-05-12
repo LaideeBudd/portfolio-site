@@ -28,7 +28,11 @@ p{
         align-items: center;
     }
 
-    @include media.xs{
+    @include media.sm{
+        align-items: center;
+    }
+
+    @include media.md{
         align-items: center;
     }
 
@@ -43,6 +47,11 @@ p{
         }
 
         @include media.sm{
+            margin: 0;
+            text-align: center;
+        }
+
+        @include media.md{
             margin: 0;
             text-align: center;
         }
@@ -246,10 +255,14 @@ p{
         font-size: 2rem;
 
         @include media.xs{
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
 
         @include media.sm{
+            font-size: 1.25rem;
+        }
+
+        @include media.md{
             font-size: 1.5rem;
         }
     }

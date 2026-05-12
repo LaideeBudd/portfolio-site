@@ -1,0 +1,150 @@
+@use "reset";
+@use "media-query" as media;
+@use "text-styling";
+@use "button";
+@use "nav";
+@use "footer";
+
+body{
+    background-color: #000;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    "hl pic"
+    "txt pic";
+
+    padding: 5rem;
+    margin-top: 5rem;
+
+    @include media.xs{
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        "hl"
+        "pic"
+        "txt";
+
+        padding: 2.5rem;
+        margin-top: 7rem;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        "hl"
+        "pic"
+        "txt";
+
+        padding: 2.5rem;
+        margin-top: 7rem;
+    }
+
+
+}
+
+.headlines{
+    grid-area: hl;
+
+    align-self: flex-end;
+
+    h1{
+        color: #FFB0B0;
+
+        @include media.xs{
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        @include media.sm{
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        @include media.md{
+            font-size: 4rem;
+        }
+    }
+
+    h3{
+        color: #fff;
+        margin-bottom: 2rem;
+
+        @include media.xs{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        @include media.sm{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        @include media.md{
+            font-size: 2rem;
+            
+        }
+    }
+}
+
+.textbox{
+    grid-area: txt;
+
+    color: #fff;
+
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+
+
+    @include media.xs{
+        align-items: center;
+
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    @include media.sm{
+        align-items: center;
+
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    p{
+        font-size: 1.75rem;
+
+        @include media.xs{
+            text-align: center;
+            font-size: 1.15rem;
+        }
+
+        @include media.sm{
+            text-align: center;
+        }
+
+        @include media.md{
+            font-size: 1.5rem;
+        }
+    }
+
+    .small-text{
+        font-size: 1rem;
+    }
+}
+
+.hero-image{
+    grid-area: pic;
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 25px;
+}

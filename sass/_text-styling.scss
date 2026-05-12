@@ -4,8 +4,8 @@
 h1{
     font-family: "Fjalla One", sans-serif;
     font-size: 6rem;
-    line-height: 95%;
-    padding-top: 1rem;
+
+
 
     @include media.xs{
         font-size: 4rem;
@@ -30,7 +30,7 @@ h1{
 h2{
     font-family: "Fjalla One", sans-serif;
     font-size: 5rem;
-    line-height: 95%;
+
     padding-top: 1rem;
 
     @include media.xs{
@@ -48,8 +48,8 @@ h2{
 h3{
     font-family: "Fjalla One", sans-serif;
     font-size: 3rem;
-    line-height: 95%;
-    padding-top: 1rem;
+
+
 
     @include media.xs{
         font-size: 2.5;
@@ -63,8 +63,8 @@ h3{
 h4{
     font-family: "Fjalla One", sans-serif;
     font-size: 2rem;
-    line-height: 95%;
-    padding-top: 1rem;
+ 
+
 
     @include media.xs{
         font-size: 1.75rem;
@@ -79,8 +79,8 @@ h4{
 h5{
     font-family: "Fjalla One", sans-serif;
     font-size: 1rem;
-    line-height: 95%;
-    padding-top: 1rem;
+
+
 }
 
 p{
@@ -91,14 +91,13 @@ p{
 
     @include media.xs{
         font-size: 1.25rem;
-        width: 85%;
-        margin-bottom: 1rem;
+
+
     }
 
     @include media.sm{
         font-size: 1.25rem;
-        width: 75%;
-        margin-bottom: 1rem;
+
     }
 
 }
