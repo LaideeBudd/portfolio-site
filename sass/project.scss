@@ -501,6 +501,30 @@ header{
     }
 }
 
+.applications{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
+    h2{
+        align-self: center;
+        text-align: center;
+    }
+
+    p{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .mini-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;

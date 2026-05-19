@@ -738,6 +738,30 @@ header {
   margin-top: 2rem;
 }
 
+.applications {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .applications {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .applications {
+    padding: 2.5rem;
+  }
+}
+.applications h2 {
+  align-self: center;
+  text-align: center;
+}
+.applications p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mini-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
