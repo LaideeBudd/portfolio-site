@@ -447,6 +447,39 @@ header {
 
 .overview {
   padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .overview {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .overview {
+    padding: 2.5rem;
+  }
+}
+.overview h4 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .overview h4 {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .overview h4 {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .overview h4 {
+    text-align: center;
+    align-self: center;
+  }
 }
 .overview h2 {
   margin-bottom: 2rem;
@@ -544,6 +577,85 @@ header {
   .bandwagon-logos .orange {
     height: 10rem;
   }
+}
+
+.color-palette {
+  margin-top: 2rem;
+}
+.color-palette span {
+  height: 13rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .color-palette span {
+    height: 10rem;
+  }
+}
+.color-palette span p {
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .color-palette span p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .color-palette span p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .color-palette span p {
+    font-size: 1.25rem;
+  }
+}
+
+.bandwagon-color {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  gap: 2rem;
+  grid-template-areas: "color1 color2 color3 color4";
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .bandwagon-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color1 color1" "color2 color3 color4";
+    gap: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .bandwagon-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color1 color1" "color2 color3 color4";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .bandwagon-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color1 color1" "color2 color3 color4";
+  }
+}
+.bandwagon-color .orange {
+  background-color: #EA7C55;
+  grid-area: color1;
+}
+.bandwagon-color .cream {
+  background-color: #FFF2D1;
+  grid-area: color2;
+}
+.bandwagon-color .black {
+  background-color: #000;
+  color: #fff;
+  grid-area: color3;
+}
+.bandwagon-color .gray {
+  background-color: #414042;
+  color: #fff;
+  grid-area: color4;
 }
 
 /*# sourceMappingURL=project.css.map */
