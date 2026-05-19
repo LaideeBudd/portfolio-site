@@ -691,4 +691,51 @@ header {
   grid-area: txt;
 }
 
+.in-practice {
+  padding: 5rem;
+}
+.in-practice h2 {
+  color: #FFB0B0;
+}
+@media (max-width: 500px) {
+  .in-practice h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-practice h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+.in-practice .content-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "txt" "pic";
+}
+@media (max-width: 500px) {
+  .in-practice .content-box {
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-practice .content-box {
+    grid-template-areas: "pic" "txt";
+  }
+}
+.in-practice .content-box img {
+  grid-area: pic;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.in-practice .content-box p {
+  color: #fff;
+  grid-area: txt;
+  margin-top: 2rem;
+}
+
 /*# sourceMappingURL=project.css.map */
