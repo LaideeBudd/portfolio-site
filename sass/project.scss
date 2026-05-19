@@ -398,3 +398,47 @@ header{
         grid-area: color4;
     }
 }
+
+.type{
+
+    h4{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.type-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "pic txt";
+
+    gap: 2rem;
+
+    align-items: center;
+
+    @include media.xs{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pic"
+        "txt";
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pic"
+        "txt";
+    }
+
+    img{
+        width: 100%;
+        border-radius: 25px;
+
+        grid-area: pic;
+    }
+
+    p{
+        grid-area: txt;
+    }
+}

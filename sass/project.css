@@ -658,4 +658,37 @@ header {
   grid-area: color4;
 }
 
+.type h4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.type-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pic txt";
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .type-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .type-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+.type-box img {
+  width: 100%;
+  border-radius: 25px;
+  grid-area: pic;
+}
+.type-box p {
+  grid-area: txt;
+}
+
 /*# sourceMappingURL=project.css.map */
