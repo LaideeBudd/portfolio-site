@@ -500,3 +500,68 @@ header{
         }
     }
 }
+
+.mini-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    @include media.xs{
+        grid-template-columns: 1fr;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr;
+    }
+}
+
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    justify-self: center;
+    width: 85%;
+    border-radius: 25px;
+
+    .button{
+        background-color: #FFB0B0;
+        color: #520000;
+        font-size: 2rem;
+
+        @include media.xs{
+            font-size: 1.25rem;
+        }
+
+        @include media.sm{
+            font-size: 1.25rem;
+        }
+
+        @include media.md{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+#rental-trifold{
+    background-image: url(../images/rental-trifold.png);
+
+}
+
+#school-poster{
+    background-image: url(../images/REPAIR-POSTER.png);
+}
+
+#rental-flyer{
+    background-image: url(../images/Rental\ Flyer\ Mockup.png);
+}
+
+#lessons-poster{
+    background-image: url(../images/lessons-POSTER.png);
+}
