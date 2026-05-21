@@ -905,6 +905,14 @@ header{
 .in-play{
     padding: 5rem;
 
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
     h2{
         color: #FFB0B0;
         margin-bottom: 2rem;
