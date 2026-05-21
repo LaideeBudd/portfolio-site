@@ -514,6 +514,11 @@ header {
   background-image: url(../images/altaira-background.png);
 }
 
+.studioc-background {
+  background-color: rgba(133, 72, 105, 0.5019607843);
+  color: #fff;
+}
+
 .bandwagon-logos {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -988,6 +993,87 @@ header {
   border: 5px solid #95CAE2;
 }
 
+.studioc-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 2rem;
+  grid-template-areas: "logo1 logo2 logo3";
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .studioc-logos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo1 logo2" "logo3 logo3";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .studioc-logos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo1 logo2" "logo3 logo3";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .studioc-logos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo1 logo2" "logo3 logo3";
+  }
+}
+.studioc-logos img {
+  width: 100%;
+  border-radius: 25px;
+  height: 15rem;
+  object-fit: contain;
+  background-color: #fff;
+}
+.studioc-logos .logo1 {
+  grid-area: logo1;
+}
+.studioc-logos .logo2 {
+  grid-area: logo2;
+}
+.studioc-logos .logo3 {
+  grid-area: logo3;
+}
+
+.studioc-color {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .studioc-color {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .studioc-color {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .studioc-color {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.studioc-color .purple {
+  background-color: #854869;
+}
+.studioc-color .cream {
+  background-color: #E9C195;
+  color: #1B1015;
+}
+.studioc-color .plum {
+  background-color: #1B1015;
+}
+.studioc-color .brown {
+  background-color: #684828;
+}
+
+.studio-c {
+  background-color: #fff;
+}
+
 .infographic-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1077,6 +1163,10 @@ header {
 .game-system p {
   grid-area: txt;
   margin-top: 2rem;
+}
+
+.round-corners {
+  border-radius: 25px;
 }
 
 .in-play {
@@ -1174,6 +1264,14 @@ header {
 
 #lessons-poster {
   background-image: url(../images/lessons-POSTER.png);
+}
+
+#studioc-sign {
+  background-image: url(../images/studioc-sign.png);
+}
+
+#studioc-stickers {
+  background-image: url(../images/studioc-stickers.png);
 }
 
 /*# sourceMappingURL=project.css.map */

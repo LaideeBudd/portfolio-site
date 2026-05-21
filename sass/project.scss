@@ -219,6 +219,11 @@ header{
     background-image: url(../images/altaira-background.png);
 }
 
+.studioc-background{
+    background-color: #85486980;
+    color: #fff;
+}
+
 .bandwagon-logos{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -787,6 +792,99 @@ header{
     }
 }
 
+.studioc-logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2rem;
+
+    grid-template-areas: 
+    "logo1 logo2 logo3";
+    margin-top: 2rem;
+
+    @include media.xs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo1 logo2"
+        "logo3 logo3";
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo1 logo2"
+        "logo3 logo3";
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo1 logo2"
+        "logo3 logo3";
+    }
+
+    img{
+        width: 100%;
+        border-radius: 25px;
+        height:15rem;
+        object-fit: contain;
+        background-color: #fff;
+    }
+
+    .logo1{
+        grid-area: logo1;
+    }
+
+    .logo2{
+        grid-area: logo2;
+    }
+
+    .logo3{
+        grid-area: logo3;
+    }
+}
+
+.studioc-color{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    @include media.xs{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .purple{
+        background-color: #854869;
+    }
+
+    .cream{
+        background-color: #E9C195;
+        color: #1B1015;
+    }
+
+    .plum{
+        background-color: #1B1015;
+        
+    }
+
+    .brown{
+        background-color: #684828;
+    }
+}
+
+.studio-c{
+    background-color: #fff;
+}
+
 
 
 .infographic-box{
@@ -902,6 +1000,10 @@ header{
 
 }
 
+.round-corners{
+    border-radius: 25px;
+}
+
 .in-play{
     padding: 5rem;
 
@@ -998,4 +1100,12 @@ header{
 
 #lessons-poster{
     background-image: url(../images/lessons-POSTER.png);
+}
+
+#studioc-sign{
+    background-image: url(../images/studioc-sign.png);
+}
+
+#studioc-stickers{
+    background-image: url(../images/studioc-stickers.png);
 }
