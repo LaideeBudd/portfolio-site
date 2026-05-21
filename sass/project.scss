@@ -330,7 +330,7 @@ header{
             font-size: 1.5rem;
 
             @include media.xs{
-                font-size: 1rem;
+                font-size: 0.85rem;
             }
 
             @include media.sm{
@@ -443,6 +443,10 @@ header{
         grid-area: pic;
     }
 
+    .no-corners{
+        border-radius: 0;
+    }
+
     p{
         grid-area: txt;
     }
@@ -510,6 +514,18 @@ header{
             grid-area: txt;
 
             margin-top: 2rem;
+        }
+    }
+
+    .text-box {
+        @include media.xs{
+            text-align: center;
+            align-self: center;
+        }
+
+        @include media.sm{
+            text-align: center;
+            align-self: center;
         }
     }
 }
@@ -702,6 +718,10 @@ header{
 
     margin-top: 2rem;
 
+    p{
+
+    }
+
     @include media.xs{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
@@ -766,6 +786,8 @@ header{
         border: 5px solid #95CAE2;
     }
 }
+
+
 
 .infographic-box{
     display: grid;
