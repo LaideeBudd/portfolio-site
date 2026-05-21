@@ -413,6 +413,9 @@ p {
   object-fit: cover;
   border-radius: 25px;
 }
+.grid-container .foundation {
+  object-fit: contain;
+}
 .grid-container .textbox {
   grid-area: txt;
   display: flex;

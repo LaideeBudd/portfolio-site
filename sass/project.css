@@ -443,6 +443,7 @@ header {
   aspect-ratio: 1;
   width: 100%;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .overview {
@@ -507,6 +508,10 @@ header {
 .bandwagon-background {
   background-image: url(../images/bandwagon-pattern.png);
   background-color: #BFBFBF;
+}
+
+.altaira-background {
+  background-image: url(../images/altaira-background.png);
 }
 
 .bandwagon-logos {
@@ -828,6 +833,306 @@ header {
   .portfolio-card .button {
     font-size: 1.5rem;
   }
+}
+
+.altaira {
+  color: #fff;
+}
+
+.altaira-logos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-areas: "logo1 logo2 logo3";
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .altaira-logos {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo1 logo1" "logo2 logo3";
+    gap: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .altaira-logos {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo1 logo1" "logo2 logo3";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .altaira-logos {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo1 logo1" "logo2 logo3";
+  }
+}
+.altaira-logos .black {
+  background-color: #000;
+  width: 100%;
+  height: 13rem;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 25px;
+  border: 5px solid #95CAE2;
+  grid-area: logo1;
+}
+@media (max-width: 500px) {
+  .altaira-logos .black {
+    height: 10rem;
+  }
+}
+.altaira-logos .navy {
+  background-color: #0D3454;
+  width: 100%;
+  height: 13rem;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 25px;
+  grid-area: logo2;
+  border: 5px solid #95CAE2;
+}
+@media (max-width: 500px) {
+  .altaira-logos .navy {
+    height: 10rem;
+  }
+}
+.altaira-logos .blue {
+  background-color: #95CAE2;
+  width: 100%;
+  height: 13rem;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 25px;
+  padding: 1rem;
+  border: 5px solid #fff;
+  grid-area: logo3;
+}
+@media (max-width: 500px) {
+  .altaira-logos .blue {
+    height: 10rem;
+  }
+}
+
+.altaira-color {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  color: #fff;
+  grid-template-areas: "color1 color2 color3 color4 color5 color6";
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .altaira-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color2 color3" "color4 color5 color6";
+    gap: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .altaira-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color2 color3" "color4 color5 color6";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .altaira-color {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "color1 color2 color3" "color4 color5 color6";
+  }
+}
+.altaira-color .navy {
+  background-color: #0D3454;
+  grid-area: color1;
+  border: 5px solid #95CAE2;
+}
+.altaira-color .blue {
+  background-color: #95CAE2;
+  color: #0D3454;
+  grid-area: color2;
+  border: 5px solid #fff;
+}
+.altaira-color .purple {
+  background-color: #605588;
+  grid-area: color3;
+  border: 5px solid #95CAE2;
+}
+.altaira-color .green {
+  background-color: #004C52;
+  grid-area: color4;
+  border: 5px solid #95CAE2;
+}
+.altaira-color .black {
+  background-color: #000;
+  color: #fff;
+  grid-area: color5;
+  border: 5px solid #95CAE2;
+}
+.altaira-color .white {
+  background-color: #fff;
+  color: #0D3454;
+  grid-area: color6;
+  border: 5px solid #95CAE2;
+}
+
+.infographic-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "txt pic";
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 500px) {
+  .infographic-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .infographic-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .infographic-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+.infographic-box img {
+  grid-area: pic;
+  width: 90%;
+  border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .infographic-box img {
+    width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .infographic-box img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .infographic-box img {
+    width: 100%;
+  }
+}
+.infographic-box .text-box {
+  grid-area: txt;
+}
+
+.game-system {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .game-system {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .game-system {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .game-system h2 {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .game-system h2 {
+    text-align: center;
+    align-self: center;
+  }
+}
+.game-system .content-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "txt" "pic";
+}
+.game-system img {
+  grid-area: pic;
+  width: 100%;
+}
+.game-system p {
+  grid-area: txt;
+  margin-top: 2rem;
+}
+
+.in-play {
+  padding: 5rem;
+}
+.in-play h2 {
+  color: #FFB0B0;
+  margin-bottom: 2rem;
+}
+.in-play p {
+  margin-bottom: 2rem;
+}
+.in-play .photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 500px) {
+  .in-play .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-play .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .in-play .photo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.in-play .photo-grid img {
+  width: 100%;
+  border-radius: 25px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.in-progress {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.in-progress h2 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .in-progress h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-progress h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .in-progress {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-progress {
+    padding: 2.5rem;
+  }
+}
+.in-progress a {
+  color: #95CAE2;
 }
 
 #rental-trifold {

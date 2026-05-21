@@ -147,6 +147,7 @@ header{
     aspect-ratio: 1;
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .overview{
@@ -212,6 +213,10 @@ header{
 .bandwagon-background{
     background-image: url(../images/bandwagon-pattern.png);
     background-color: #BFBFBF;
+}
+
+.altaira-background{
+    background-image: url(../images/altaira-background.png);
 }
 
 .bandwagon-logos{
@@ -587,6 +592,364 @@ header{
         @include media.md{
             font-size: 1.5rem;
         }
+    }
+}
+
+.altaira{
+    color: #fff;
+}
+
+.altaira-logos{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+
+    grid-template-areas: 
+    "logo1 logo2 logo3";
+
+    gap: 2rem;
+  
+
+    margin-top: 2rem;
+
+
+
+    @include media.xs{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "logo1 logo1"
+        "logo2 logo3"; 
+
+        gap: 1rem;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "logo1 logo1"
+        "logo2 logo3"; 
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "logo1 logo1"
+        "logo2 logo3"; 
+    }
+
+    .black{
+        background-color: #000;
+        width: 100%;
+        height: 13rem;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 25px;
+
+        border: 5px solid #95CAE2;
+
+        grid-area: logo1;
+
+        @include media.xs{
+            height: 10rem;
+        }
+    }
+
+    .navy{
+        background-color: #0D3454;
+        width: 100%;
+        height: 13rem;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 25px;
+
+        grid-area: logo2;
+
+        border: 5px solid #95CAE2;
+
+        @include media.xs{
+            height: 10rem;
+        }
+    }
+
+    .blue{
+        background-color: #95CAE2;
+        width: 100%;
+        height: 13rem;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 25px;
+        padding: 1rem;
+
+        border: 5px solid #fff;
+
+        grid-area: logo3;
+
+        @include media.xs{
+            height: 10rem;
+        }
+    }
+}
+
+
+.altaira-color{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+    color: #fff;
+
+    grid-template-areas: 
+    "color1 color2 color3 color4 color5 color6";
+
+    margin-top: 2rem;
+
+    @include media.xs{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "color1 color2 color3"
+        "color4 color5 color6";
+
+        gap: 1rem;
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "color1 color2 color3"
+        "color4 color5 color6";
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "color1 color2 color3"
+        "color4 color5 color6";
+    }
+
+    .navy{
+        background-color: #0D3454;
+        grid-area: color1;
+
+        border: 5px solid #95CAE2;
+    }
+
+    .blue{
+        background-color: #95CAE2;
+        color: #0D3454;
+        grid-area: color2;
+
+        border: 5px solid #fff;
+    }
+
+    .purple{
+        background-color: #605588;
+        grid-area: color3;
+        border: 5px solid #95CAE2;
+    }
+
+    .green{
+        background-color: #004C52;
+        grid-area: color4;
+        border: 5px solid #95CAE2;
+    }
+
+    .black{
+        background-color: #000;
+        color: #fff;
+        grid-area: color5;
+        border: 5px solid #95CAE2;
+    }
+
+    .white{
+        background-color: #fff;
+        color: #0D3454;
+        grid-area: color6;
+        border: 5px solid #95CAE2;
+    }
+}
+
+.infographic-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "txt pic";
+    align-items: center;
+
+    gap: 2rem;
+
+    @include media.xs{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pic"
+        "txt";
+    }
+
+    @include media.sm{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pic"
+        "txt";
+    }
+
+    @include media.md{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pic"
+        "txt";
+    }
+
+    img{
+        grid-area: pic;
+        width: 90%;
+
+        border-radius: 25px;
+
+        @include media.xs{
+            width: 100%;
+        }
+
+        @include media.sm{
+            width: 100%;
+        }
+
+        @include media.md{
+            width: 100%;
+        }
+
+        
+    }
+
+    .text-box{
+        grid-area: txt;
+
+    }
+}
+
+.game-system{
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 5rem;
+    color: #fff;
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
+    h2{
+
+        @include media.xs{
+            text-align: center;
+            align-self: center;
+
+        }
+
+        @include media.sm{
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+
+
+    .content-box{
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        "txt"
+        "pic";
+    }
+
+    img{
+        grid-area: pic;
+
+        width: 100%;
+    }
+
+    p{
+        grid-area: txt;
+        margin-top: 2rem;
+
+    }
+
+}
+
+.in-play{
+    padding: 5rem;
+
+    h2{
+        color: #FFB0B0;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    .photo-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        @include media.xs{
+            grid-template-columns: 1fr;
+        }
+
+        @include media.sm{
+            grid-template-columns: 1fr;
+        }
+
+        @include media.md{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 25px;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+    }
+
+
+}
+
+.in-progress{
+    display: flex;
+    flex-direction: column;
+
+    padding: 5rem;
+
+    h2{
+        margin-bottom: 2rem;
+        @include media.xs{
+            align-self: center;
+            text-align: center;
+        }
+
+        @include media.sm{
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
+    a{
+        color: #95CAE2;
     }
 }
 
