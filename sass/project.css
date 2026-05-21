@@ -1223,6 +1223,9 @@ header {
   grid-area: pic;
   width: 100%;
 }
+.web-content .grid-container a {
+  text-decoration: none;
+}
 .web-content .grid-container .button {
   grid-area: button;
   background-color: #FFB0B0;
