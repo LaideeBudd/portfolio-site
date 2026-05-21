@@ -447,6 +447,14 @@ header{
 
     
     padding: 5rem;
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
     h2{
         color: #FFB0B0;
 
@@ -515,8 +523,17 @@ header{
     }
 
     h2{
-        align-self: center;
-        text-align: center;
+
+        @include media.xs{
+            align-self: center;
+            text-align: center;
+        }
+
+        @include media.sm{
+            align-self: center;
+            text-align: center;
+        }
+
     }
 
     p{

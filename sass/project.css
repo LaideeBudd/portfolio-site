@@ -694,6 +694,16 @@ header {
 .in-practice {
   padding: 5rem;
 }
+@media (max-width: 500px) {
+  .in-practice {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .in-practice {
+    padding: 2.5rem;
+  }
+}
 .in-practice h2 {
   color: #FFB0B0;
 }
@@ -753,9 +763,17 @@ header {
     padding: 2.5rem;
   }
 }
-.applications h2 {
-  align-self: center;
-  text-align: center;
+@media (max-width: 500px) {
+  .applications h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .applications h2 {
+    align-self: center;
+    text-align: center;
+  }
 }
 .applications p {
   margin-top: 2rem;
