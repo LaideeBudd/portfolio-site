@@ -519,6 +519,11 @@ header {
   color: #fff;
 }
 
+.myst-background {
+  background-color: #65337B;
+  color: #fff;
+}
+
 .bandwagon-logos {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -1072,6 +1077,157 @@ header {
 
 .studio-c {
   background-color: #fff;
+}
+
+.myst-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .myst-logos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .myst-logos {
+    grid-template-columns: 1fr;
+  }
+}
+.myst-logos img {
+  width: 100%;
+  height: 15rem;
+  object-position: center;
+  object-fit: contain;
+  border-radius: 25px;
+}
+.myst-logos .logo1 {
+  background-color: #221129;
+}
+.myst-logos .logo2 {
+  background-color: #746BA3;
+}
+
+.myst-colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .myst-colors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .myst-colors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .myst-colors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.myst-colors .purple1 {
+  background-color: #8B4AAC;
+}
+.myst-colors .purple2 {
+  background-color: #4F4755;
+}
+.myst-colors .purple3 {
+  background-color: #221129;
+}
+.myst-colors .purple4 {
+  background-color: #746BA3;
+}
+
+.myst-content-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-areas: "txt pic";
+}
+@media (max-width: 500px) {
+  .myst-content-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .myst-content-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .myst-content-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic" "txt";
+  }
+}
+.myst-content-box img {
+  grid-area: pic;
+  width: 100%;
+}
+.myst-content-box p {
+  grid-area: txt;
+  color: #fff;
+  align-self: center;
+}
+
+.web-content {
+  padding: 5rem;
+}
+@media (max-width: 500px) {
+  .web-content {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .web-content {
+    padding: 2.5rem;
+  }
+}
+.web-content .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  grid-template-areas: "txt pic" "button pic";
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .web-content .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "txt" "pic" "button";
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .web-content .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "txt" "pic" "button";
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .web-content .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "txt" "pic" "button";
+  }
+}
+.web-content .grid-container p {
+  grid-area: txt;
+}
+.web-content .grid-container img {
+  grid-area: pic;
+  width: 100%;
+}
+.web-content .grid-container .button {
+  grid-area: button;
+  background-color: #FFB0B0;
+  color: #520000;
+  width: 100%;
 }
 
 .infographic-box {
