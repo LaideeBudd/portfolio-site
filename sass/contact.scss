@@ -1,0 +1,43 @@
+@use "reset";
+@use "media-query" as media;
+@use "text-styling";
+@use "nav";
+@use "footer";
+
+
+
+.contact{
+    background-image: url(../images/Brand-Pattern-deep-red.png);
+
+    padding: 5rem;
+
+    color: #fff;
+
+    h1{
+        color: #FFB0B0;
+        margin-top: 5rem;
+
+        @include media.xs{
+            text-align: center;
+        }
+
+        @include media.sm{
+            text-align: center;
+        }
+
+        @include media.md{
+            text-align: center;
+        }
+    }
+
+    a{
+        color: #fff;
+    }
+
+
+
+}
+
+.contact-form{
+    margin: 5rem;
+}
