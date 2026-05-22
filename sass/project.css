@@ -529,6 +529,10 @@ header {
   color: #fff;
 }
 
+.boxlunch-background {
+  background-color: #C6714B;
+}
+
 .bandwagon-logos {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -1196,6 +1200,16 @@ header {
     padding: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .web-content h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .web-content h2 {
+    text-align: center;
+  }
+}
 .web-content .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1502,6 +1516,60 @@ header {
 }
 .in-progress a {
   color: #95CAE2;
+}
+
+.ux-section {
+  padding: 5rem;
+}
+@media (max-width: 500px) {
+  .ux-section {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .ux-section {
+    padding: 2.5rem;
+  }
+}
+.ux-section h2 {
+  padding-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .ux-section h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .ux-section h2 {
+    text-align: center;
+  }
+}
+.ux-section .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+@media (max-width: 500px) {
+  .ux-section .grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .ux-section .grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.ux-section .grid-box img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.ux2 h2 {
+  color: #FFB0B0;
+}
+.ux2 p {
+  color: #fff;
 }
 
 #rental-trifold {

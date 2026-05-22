@@ -234,6 +234,10 @@ header{
     color: #fff;
 }
 
+.boxlunch-background{
+    background-color: #C6714B;
+}
+
 .bandwagon-logos{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -1015,6 +1019,16 @@ header{
         padding: 2.5rem;
     }
 
+    h2{
+        @include media.xs{
+            text-align: center;
+        }
+
+        @include media.sm{
+            text-align: center;
+        }
+    }
+
     .grid-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1382,6 +1396,65 @@ header{
 
     a{
         color: #95CAE2;
+    }
+}
+
+.ux-section{
+
+    padding: 5rem;
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
+    h2{
+        padding-bottom: 2rem;
+
+        @include media.xs{
+            text-align: center;
+        }
+
+        @include media.sm{
+            text-align: center;
+        }
+    }
+
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        gap: 2rem;
+
+        padding-top: 2rem;
+
+        @include media.xs{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media.sm{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        img{
+            width: 100%;
+            
+            object-fit: contain;
+        }
+
+    }
+}
+
+.ux2{
+    h2{
+        color: #FFB0B0;
+    }
+
+    p{
+        color: #fff;
     }
 }
 
