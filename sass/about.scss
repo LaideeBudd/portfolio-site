@@ -1,0 +1,98 @@
+@use "reset";
+@use "media-query" as media;
+@use "text-styling";
+@use "nav";
+@use "footer";
+
+ 
+
+
+
+.about{
+    background-image: url(../images/Brand-Pattern-pink.png);
+    background-repeat: repeat;
+
+    
+
+    padding-left: 5rem;
+
+    padding-top: 10rem;
+
+    @include media.xs{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+
+        padding-top: 10rem;
+    }
+
+    @include media.sm{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+
+        padding-top: 10rem;
+    }
+
+    @include media.md{
+        padding-right: 5rem;
+
+        padding-top: 10rem;
+    }
+
+    h1{
+        @include media.xs{
+            text-align: center;
+            align-self: center;
+        }
+
+        @include media.sm{
+            text-align: center;
+            align-self: center;
+        }
+
+        @include media.md{
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include media.xs{
+            grid-template-columns: 1fr;
+        }
+
+        @include media.sm{
+            grid-template-columns: 1fr;
+        }
+
+        @include media.md{
+            grid-template-columns: 1fr;
+        }
+
+        p{
+            margin-top: 2rem;
+        }
+
+        img{
+            width: 125%;
+
+            object-fit: contain;
+
+            @include media.xs{
+                width: 100%
+            }
+
+            @include media.sm{
+                width: 100%
+            }
+
+            @include media.md{
+                width: 100%
+            }
+        }
+
+    }
+
+}
