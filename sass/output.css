@@ -253,9 +253,9 @@ body {
 .hero-grid-container {
   display: grid;
   grid-template-columns: 1fr 1 fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". . hs" "txt . hs" "txt . hs";
-  min-height: 95vh;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "txt . hs" "txt . hs";
+  min-height: 85vh;
 }
 @media (max-width: 500px) {
   .hero-grid-container {
@@ -279,6 +279,7 @@ body {
   flex-direction: column;
   margin-left: 5rem;
   justify-content: center;
+  margin-top: 10rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box {
@@ -297,7 +298,6 @@ body {
 .hero-grid-container .text-box h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 6rem;
-  margin-top: -6rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box h1 {
@@ -340,6 +340,9 @@ body {
     width: 75%;
     margin-bottom: 1rem;
   }
+}
+.hero-grid-container .text-box .button {
+  margin-bottom: 5rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box .button {

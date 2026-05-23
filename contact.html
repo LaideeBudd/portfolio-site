@@ -33,9 +33,28 @@
         <p>Currently available for brand identity and web design projects.</p>
         <p><a href="mailto:ab@laideebuddcreative.com">ab@laideebuddcreative.com</a>– OR –</p>
 
-            <!-- Elfsight Form Builder | Untitled Form Builder -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-43f56cbc-9621-4989-bf49-ba3b9afeeb14 contact-form" data-elfsight-app-lazy></div>
+        <form class="contact-form" id="contact-form">
+            <div class="contact-form__field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+          
+            <div class="contact-form__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          
+            <div class="contact-form__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          
+            <a href="#" class="button contact-form__submit" id="contact-submit">
+              SUBMIT
+            </a>
+          
+            <p class="contact-form__status" id="form-status"></p>
+          </form>
     </header>
 
 

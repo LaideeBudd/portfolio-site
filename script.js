@@ -34,3 +34,37 @@ const navFlex = () => {
 
   window.onresize = navFlex;
 
+
+
+  const form = document.getElementById("contact-form");
+const submit = document.getElementById("contact-submit");
+const status = document.getElementById("form-status");
+
+submit.addEventListener("click", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  formData.append("access_key", "5fb1f410-ac33-4bbd-aa12-a92bd1fe9185");
+
+  status.textContent = "Sending...";
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      status.textContent = "Message sent successfully.";
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong.";
+    }
+  } catch (error) {
+    status.textContent = "Something went wrong.";
+  }
+});
+

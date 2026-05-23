@@ -291,10 +291,57 @@ footer .copyright {
   }
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+  background-color: #520000;
+  border-radius: 100px;
+  width: 80%;
+  max-width: 100%;
+  padding: 0.75rem 2rem;
+  min-height: 5rem;
+  white-space: normal;
+}
+@media (max-width: 500px) {
+  .button {
+    font-size: 2rem;
+    min-height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .button {
+    font-size: 2rem;
+    min-height: 4rem;
+  }
+}
+
 .contact {
   background-image: url(../images/Brand-Pattern-deep-red.png);
   padding: 5rem;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .contact {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .contact {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    padding: 2.5rem;
+  }
 }
 .contact h1 {
   color: #FFB0B0;
@@ -320,7 +367,58 @@ footer .copyright {
 }
 
 .contact-form {
-  margin: 5rem;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+.contact-form__field {
+  margin-bottom: 1rem;
+}
+.contact-form__field label {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: #FFB0B0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-form__field input,
+.contact-form__field textarea {
+  width: 100%;
+  border: none;
+  border-radius: 1.4rem;
+  background: #fff;
+  color: #520000;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  outline: 3px solid #FFB0B0;
+  outline-offset: 3px;
+}
+.contact-form__field input {
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+.contact-form__field textarea {
+  min-height: 15.5rem;
+  padding: 1.25rem 1.5rem;
+  resize: vertical;
+}
+.contact-form__submit {
+  margin: 2rem auto 0;
+}
+.contact-form__status {
+  margin-top: 1rem;
+  text-align: center;
+  color: #FFB0B0;
+  font-size: 0.95rem;
+}
+.contact-form .button {
+  background-color: #FFB0B0;
+  color: #520000;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=contact.css.map */

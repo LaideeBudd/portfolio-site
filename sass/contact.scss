@@ -4,6 +4,8 @@
 @use "nav";
 @use "footer";
 
+@use "button";
+
 
 
 .contact{
@@ -12,6 +14,18 @@
     padding: 5rem;
 
     color: #fff;
+
+    @include media.xs{
+        padding: 2.5rem;
+    }
+
+    @include media.sm{
+        padding: 2.5rem;
+    }
+
+    @include media.md{
+        padding: 2.5rem;
+    }
 
     h1{
         color: #FFB0B0;
@@ -38,6 +52,67 @@
 
 }
 
-.contact-form{
-    margin: 5rem;
-}
+.contact-form {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 2.5rem 0 3rem;
+  
+    &__field {
+      margin-bottom: 1rem;
+  
+      label {
+        display: block;
+        margin-bottom: 0.7rem;
+        color: #FFB0B0;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        border-radius: 1.4rem;
+        background: #fff;
+        color: #520000;
+        font-family: inherit;
+        font-size: 1rem;
+  
+        &:focus {
+          outline: 3px solid #FFB0B0;
+          outline-offset: 3px;
+        }
+      }
+  
+      input {
+        height: 4rem;
+        padding: 0 1.5rem;
+      }
+  
+      textarea {
+        min-height: 15.5rem;
+        padding: 1.25rem 1.5rem;
+        resize: vertical;
+      }
+    }
+  
+    &__submit {
+      margin: 2rem auto 0;
+    }
+  
+    &__status {
+      margin-top: 1rem;
+      text-align: center;
+      color: #FFB0B0;
+      font-size: 0.95rem;
+    }
+
+    .button{
+        background-color: #FFB0B0;
+        color: #520000;
+        font-size: 2rem;
+
+
+      }
+  }

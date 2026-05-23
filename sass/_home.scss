@@ -30,13 +30,15 @@ body{
 .hero-grid-container{
     display: grid;
     grid-template-columns: 1fr 1 fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    ". . hs"
+    // ". . hs"
     "txt . hs"
     "txt . hs" ;
 
-    min-height: 95vh;
+    min-height: 85vh;
+
+    
 
     
 
@@ -77,6 +79,8 @@ body{
 
         justify-content: center;
 
+        margin-top: 10rem;
+
 
         @include media.xs{
             height: 100%;
@@ -96,7 +100,7 @@ body{
             font-family: "Fjalla One", sans-serif;
             font-size: 6rem;
 
-            margin-top: -6rem;
+
 
 
             @include media.xs{
@@ -145,6 +149,8 @@ body{
         }
 
         .button{
+
+            margin-bottom: 5rem;
 
             @include media.xs{
                 width: 55%;
