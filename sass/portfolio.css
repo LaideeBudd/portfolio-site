@@ -98,28 +98,34 @@ p {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Fjalla One", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
   font-size: 3rem;
   text-align: center;
-  align-content: center;
+  line-height: 1;
   background-color: #520000;
-  height: 5rem;
   border-radius: 100px;
   width: 80%;
+  max-width: 100%;
+  padding: 0.75rem 2rem;
+  min-height: 5rem;
+  white-space: normal;
 }
 @media (max-width: 500px) {
   .button {
     font-size: 2rem;
-    height: 4rem;
+    min-height: 4rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .button {
     font-size: 2rem;
-    height: 4rem;
+    min-height: 4rem;
   }
 }
 
