@@ -4,6 +4,9 @@
   box-sizing: border-box;
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+html {
   -webkit-text-size-adjust: none;
 }
 
