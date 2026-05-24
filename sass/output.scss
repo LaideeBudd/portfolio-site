@@ -6,6 +6,11 @@
   overflow-x: hidden;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 nav #nav-container {
   display: flex;
   flex-direction: row;
@@ -114,27 +119,121 @@ nav #nav-container #nav-items a {
   height: 50vh;
 }
 
+footer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+footer .main-section .name-with-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: flex-start;
+}
+footer .main-section .name-with-icon img {
+  width: 7rem;
+  margin-right: -1rem;
+}
+footer .main-section .name-with-icon .namestack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .main-section .name-with-icon .namestack h5 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  color: #520000;
+}
+footer .main-section .name-with-icon .namestack p {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 1.5rem;
+  color: #B8183C;
+}
+@media (max-width: 500px) {
+  footer .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  footer .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .main-section a {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 1.5rem;
+  color: #B8183C;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  footer .main-section a {
+    margin: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  footer .main-section a {
+    margin: 1rem;
+  }
+}
+footer .copyright {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 1rem;
+  color: #520000;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    margin-top: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  footer .copyright {
+    margin-top: 0;
+  }
+}
+
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Fjalla One", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
   font-size: 3rem;
   text-align: center;
-  align-content: center;
+  line-height: 1;
   background-color: #520000;
-  height: 5rem;
   border-radius: 100px;
   width: 80%;
+  max-width: 100%;
+  padding: 0.75rem 2rem;
+  min-height: 5rem;
+  white-space: normal;
 }
 @media (max-width: 500px) {
   .button {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    min-height: 4rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .button {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    min-height: 4rem;
   }
 }
 
@@ -152,12 +251,16 @@ nav #nav-container #nav-items a {
   color: #520000;
 }
 
+body {
+  height: 100%;
+}
+
 .hero-grid-container {
   display: grid;
   grid-template-columns: 1fr 1 fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". . hs" "txt . hs" "txt . hs";
-  height: 85vh;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "txt . hs" "txt . hs";
+  min-height: 85vh;
 }
 @media (max-width: 500px) {
   .hero-grid-container {
@@ -181,47 +284,48 @@ nav #nav-container #nav-items a {
   flex-direction: column;
   margin-left: 5rem;
   justify-content: center;
+  margin-top: 10rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box {
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-left: 2rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .hero-grid-container .text-box {
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-left: 2rem;
   }
 }
 .hero-grid-container .text-box h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 6rem;
-  line-height: 95%;
-  padding-top: 1rem;
-  margin-top: -6rem;
-  margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box h1 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 14vw, 4rem);
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .hero-grid-container .text-box h1 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 14vw, 4rem);
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-grid-container .text-box h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
+}
+.hero-grid-container .text-box .lower-line {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 .hero-grid-container .text-box p {
   font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
@@ -241,6 +345,9 @@ nav #nav-container #nav-items a {
     width: 75%;
     margin-bottom: 1rem;
   }
+}
+.hero-grid-container .text-box .button {
+  margin-bottom: 5rem;
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box .button {
@@ -263,7 +370,7 @@ nav #nav-container #nav-items a {
 }
 .hero-grid-container img {
   grid-area: hs;
-  height: 85%;
+  max-height: 75vh;
   align-self: flex-end;
 }
 @media (max-width: 500px) {
@@ -367,6 +474,7 @@ section h2 {
   align-self: center;
   font-family: "Fjalla One", sans-serif;
   font-size: 3rem;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card h4 {
@@ -378,6 +486,7 @@ section h2 {
   align-self: center;
   font-family: "Fjalla One", sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card h5 {
@@ -389,6 +498,16 @@ section h2 {
   font-size: 2rem;
   background-color: #B8183C;
   margin: 1rem 0 1rem 0;
+}
+@media (max-width: 500px) {
+  .card-grid .card .button {
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .card-grid .card .button {
+    height: 4rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card {
@@ -402,7 +521,6 @@ section h2 {
 section .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "tb pic";
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
@@ -480,15 +598,17 @@ section .grid-container .text-box .button {
   section .grid-container .text-box .button {
     width: 85%;
     align-self: center;
+    height: 4rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   section .grid-container .text-box .button {
     width: 85%;
     align-self: center;
+    height: 4rem;
   }
 }
-section .grid-container img {
+section .grid-container .section-img {
   width: 90%;
   align-self: center;
   justify-self: center;
@@ -496,18 +616,132 @@ section .grid-container img {
   margin-top: -4.5rem;
 }
 @media (max-width: 500px) {
-  section .grid-container img {
+  section .grid-container .section-img {
     margin: 0;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  section .grid-container img {
+  section .grid-container .section-img {
     margin: 0;
+  }
+}
+
+.what-i-do {
+  grid-template-areas: "tb pic";
+}
+
+.foundation {
+  grid-template-areas: "pic tb";
+  margin-top: 3rem;
+}
+.foundation .section-img {
+  margin: 0;
+  padding: 3rem;
+  align-self: flex-start;
+}
+@media (max-width: 500px) {
+  .foundation .section-img {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .foundation .section-img {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+.foundation .foundation-logo {
+  margin-bottom: 3rem;
+  width: 85%;
+  align-self: center;
+}
+.foundation .button {
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .foundation .button {
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .foundation .button {
+    height: 4rem;
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.cta h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #FFB0B0;
+  font-size: 3.5rem;
+  margin: 3rem 0 3rem 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .cta h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .cta h1 {
+    font-size: 3rem;
+  }
+}
+.cta p {
+  font-family: "Josefin Sans", "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .cta p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .cta p {
+    font-size: 1.5rem;
+  }
+}
+.cta .button {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .cta .button {
+    width: 85%;
+    height: 4rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .cta .button {
+    width: 85%;
+    height: 4rem;
   }
 }
 
 body {
   background-color: #000;
+}
+
+.placeholder {
+  height: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=output.scss.map */
