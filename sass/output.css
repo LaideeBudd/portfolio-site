@@ -307,7 +307,6 @@ body {
 @media (max-width: 500px) {
   .hero-grid-container .text-box h1 {
     font-size: clamp(3rem, 14vw, 4rem);
-    line-height: 0.9;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
@@ -315,7 +314,6 @@ body {
 @media (min-width: 501px) and (max-width: 767px) {
   .hero-grid-container .text-box h1 {
     font-size: clamp(3rem, 14vw, 4rem);
-    line-height: 0.9;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
@@ -476,6 +474,7 @@ section h2 {
   align-self: center;
   font-family: "Fjalla One", sans-serif;
   font-size: 3rem;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card h4 {
@@ -487,6 +486,7 @@ section h2 {
   align-self: center;
   font-family: "Fjalla One", sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-grid .card h5 {
