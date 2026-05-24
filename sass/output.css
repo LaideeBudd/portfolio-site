@@ -7,7 +7,8 @@
 }
 
 html {
-  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 nav #nav-container {
@@ -305,14 +306,16 @@ body {
 }
 @media (max-width: 500px) {
   .hero-grid-container .text-box h1 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 14vw, 4rem);
+    line-height: 0.9;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .hero-grid-container .text-box h1 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 14vw, 4rem);
+    line-height: 0.9;
     margin-top: 0rem;
     margin-bottom: 0.5rem;
   }

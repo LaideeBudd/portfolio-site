@@ -104,14 +104,16 @@ body{
 
 
             @include media.xs{
-                font-size: 4rem;
+                font-size: clamp(3rem, 14vw, 4rem);
+                line-height: 0.9;
                 margin-top: 0rem;
                 margin-bottom: 0.5rem;
                 
             }
 
             @include media.sm{
-                font-size: 4rem;
+                font-size: clamp(3rem, 14vw, 4rem);
+                line-height: 0.9;
                 margin-top: 0rem;
                 margin-bottom: 0.5rem;
                 
